@@ -19,12 +19,6 @@ namespace QLD_THD.Controllers
         {
             _bus = bus;
         }
-        //[Route("get-all")]
-        //[HttpPost]
-        //public List<MonHoc> GetMonHocs()
-        //{
-        //    return _bus.GetMonHocs();
-        //}
         [Route("search")]
         [HttpPost]
         public async Task<ResponseListMessage<List<MonHoc>>> Search([FromBody] Dictionary<string, object> formData)

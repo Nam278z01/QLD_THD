@@ -16,11 +16,6 @@ namespace BusinesslogicLayer
             _res = res;
         }
 
-        public List<MonHoc> GetMonHocs()
-        {
-            return _res.GetMonHocs();
-
-        }
         public List<MonHoc> Search(int page, int pageSize, string mamh, string tenmh, out long total)
         {
             return _res.Search(page, pageSize, mamh, tenmh, out total);
