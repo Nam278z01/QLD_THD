@@ -9,6 +9,11 @@ namespace DataAccessLayer
 {
     public interface IAccountRepository
     {
-        List<Account> GetAccounts();
+        //List<Account> GetAccounts();
+        //List<MonHoc> Search(int page, int pageSize, string mamh, string tenmh, out long total);
+        //MonHoc GetById(string id);
+        //bool Create(MonHoc model);
+        //bool Update(MonHoc model);
+        //bool Delete(List<string> ids);
     }
 }

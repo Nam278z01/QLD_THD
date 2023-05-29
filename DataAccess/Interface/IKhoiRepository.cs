@@ -9,6 +9,11 @@ namespace DataAccessLayer
 {
     public interface IKhoiRepository
     {
-        List<Khoi> GetKhoiHocs();
+        //List<Khoi> GetKhois();
+        List<Khoi> Search(int page, int pageSize, string mamh, string tenmh, out long total);
+        Khoi GetById(string id);
+        bool Create(Khoi model);
+        bool Update(Khoi model);
+        bool Delete(List<string> ids);
     }
 }

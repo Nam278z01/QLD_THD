@@ -9,6 +9,11 @@ namespace DataAccessLayer
 {
     public interface ILopRepository
     {
-        List<Lop> GetLopHocs();
+        //List<Lop> GetLopHocs();
+        List<Lop> Search(int page, int pageSize, string mamh, string tenmh, out long total);
+        Lop GetById(string id);
+        bool Create(Lop model);
+        bool Update(Lop model);
+        bool Delete(List<string> ids);
     }
 }

@@ -9,6 +9,11 @@ namespace DataAccessLayer
 {
     public interface IGiaoVienRepository
     {
-        List<GiaoVien> GetGiaoViens();
+        //List<GiaoVien> GetGiaoViens();
+        List<GiaoVien> Search(int page, int pageSize, string mamh, string tenmh, out long total);
+        MonHoc GetById(string id);
+        bool Create(MonHoc model);
+        bool Update(MonHoc model);
+        bool Delete(List<string> ids);
     }
 }
