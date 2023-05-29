@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EPPlus" Version="5.8.14" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.2.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.17">
       <PrivateAssets>all</PrivateAssets>
@@ -21,6 +22,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Business\BusinesslogicLayer.csproj" />
     <ProjectReference Include="..\Model\DataModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Export\Excel\" />
+    <Folder Include="Upload\" />
   </ItemGroup>
 
 </Project>
