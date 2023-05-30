@@ -43,6 +43,33 @@ namespace QLD_THD
             services.AddTransient<IMonHocRepository, MonHocRepository>();
             services.AddTransient<IMonHocBusiness, MonHocBusiness>();
             services.AddControllers();
+            services.AddTransient<IKhoiRepository, KhoiRepository>();
+            services.AddTransient<IKhoiBusiness, KhoiBusiness>();
+            services.AddControllers();
+            services.AddTransient<ILopRepository, LopRepository>();
+            services.AddTransient<ILopBusiness, LopBusiness>();
+            services.AddControllers();
+            services.AddTransient<IHocSinhRepository, HocSinhRepository>();
+            services.AddTransient<IHocSinhBusiness, HocSinhBusiness>();
+            services.AddControllers();
+            services.AddTransient<IGiaoVienRepository, GiaoVienRepository>();
+            services.AddTransient<IGiaoVienBusiness, GiaoVienBusiness>();
+            services.AddControllers();
+            services.AddTransient<ILoaiDiemRepository, LoaiDiemRepository>();
+            services.AddTransient<ILoaiDiemBusiness, LoaiDiemBusiness>();
+            services.AddControllers();
+            services.AddTransient<IDiemRepository, DiemRepository>();
+            services.AddTransient<IDiemBusiness, DiemBusiness>();
+            services.AddControllers();
+            services.AddTransient<ICtietDiemRepository, CtietDiemRepository>();
+            services.AddTransient<ICtietDiemBusiness, CtietDiemBusiness>();
+            services.AddControllers();
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IUserBusiness, UserBusiness>();
+            services.AddControllers();
+            services.AddTransient<IAccountRepository, AccountRepository>();
+            services.AddTransient<IAccountBusiness, AccountBusiness>();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
