@@ -9,6 +9,6 @@ namespace BusinesslogicLayer
 {
     public interface IDiemBusiness
     {
-        List<Diem> GetDiems();
+        //List<Diem> GetDiems();
     }
 }

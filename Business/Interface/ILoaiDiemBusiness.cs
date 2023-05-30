@@ -9,6 +9,6 @@ namespace BusinesslogicLayer
 {
     public interface ILoaiDiemBusiness
     {
-        List<LoaiDiem> GetLoaiDiems();
+        //List<LoaiDiem> GetLoaiDiems();
     }
 }

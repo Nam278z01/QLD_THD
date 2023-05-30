@@ -9,6 +9,6 @@ namespace BusinesslogicLayer
 {
     public interface ICtietDiemBusiness
     {
-        List<Ctdiem> GetCtietDiems();
+        //List<Ctdiem> GetCtietDiems();
     }
 }

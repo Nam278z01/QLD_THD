@@ -9,6 +9,6 @@ namespace BusinesslogicLayer
 {
     public interface IGiaoVienBusiness
     {
-        List<GiaoVien> GetGiaoViens();
+        //List<GiaoVien> GetGiaoViens();
     }
 }

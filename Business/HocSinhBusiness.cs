@@ -16,10 +16,10 @@ namespace BusinesslogicLayer
             _res = res;
         }
 
-        public List<HocSinh> GetHocSinhs()
-        {
-            return _res.GetHocSinhs();
-        }
+        //public List<HocSinh> GetHocSinhs()
+        //{
+        //    return _res.GetHocSinhs();
+        //}
 
     }
 }

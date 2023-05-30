@@ -15,11 +15,11 @@ namespace QLD_THD.Controllers
         {
             _bus = bus;
         }
-        [Route("get-all")]
-        [HttpPost]
-        public List<HocSinh> GetHocSinhs()
-        {
-            return _bus.GetHocSinhs();
-        }
+        //[Route("get-all")]
+        //[HttpPost]
+        //public List<HocSinh> GetHocSinhs()
+        //{
+        //    return _bus.GetHocSinhs();
+        //}
     }
 }

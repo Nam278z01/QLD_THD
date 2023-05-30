@@ -16,10 +16,10 @@ namespace BusinesslogicLayer
             _res = res;
         }
 
-        public List<GiaoVien> GetGiaoViens()
-        {
-            return _res.GetGiaoViens();
-        }
+        //public List<GiaoVien> GetGiaoViens()
+        //{
+        //    return _res.GetGiaoViens();
+        //}
 
     }
 }

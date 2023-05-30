@@ -9,6 +9,6 @@ namespace BusinesslogicLayer
 {
     public interface IKhoiBusiness
     {
-        List<Khoi> GetKhoiHocs();
+        //List<Khoi> GetKhoiHocs();
     }
 }

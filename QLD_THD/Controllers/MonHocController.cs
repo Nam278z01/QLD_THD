@@ -140,9 +140,9 @@ namespace QLD_THD.Controllers
             }
             return response;
         }
+
         [Route("upload")]
         [HttpPost, DisableRequestSizeLimit]
-
         public async Task<IActionResult> Upload(IFormFile file)
         {
             try
@@ -176,6 +176,7 @@ namespace QLD_THD.Controllers
                 return Ok(new { MessageCodes.UpdateFail });
             }
         }
+
         [Route("export-to-excel")]
         [HttpPost]
         public async Task<IActionResult> ExportToExcel([FromBody] Dictionary<string, object> formData)
@@ -183,8 +184,8 @@ namespace QLD_THD.Controllers
             try
             {
                 long total = 0;
-                var page = int.Parse(formData["page"].ToString());
-                var pageSize = int.Parse(formData["pageSize"].ToString());
+                var page = 1;
+                var pageSize = 0;
                 var mamh = formData.Keys.Contains("mamh") ? Convert.ToString(formData["mamh"]) : "";
                 var tenmh = formData.Keys.Contains("tenmh") ? Convert.ToString(formData["tenmh"]) : "";
 

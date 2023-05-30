@@ -9,6 +9,6 @@ namespace BusinesslogicLayer
 {
     public interface IAccountBusiness
     {
-        List<Account> GetAccounts();
+        //List<Account> GetAccounts();
     }
 }

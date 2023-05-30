@@ -9,6 +9,6 @@ namespace BusinesslogicLayer
 {
     public interface IHocSinhBusiness
     {
-        List<HocSinh> GetHocSinhs();
+        //List<HocSinh> GetHocSinhs();
     }
 }

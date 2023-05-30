@@ -16,10 +16,10 @@ namespace BusinesslogicLayer
             _res = res;
         }
 
-        public List<Account> GetAccounts()
-        {
-            return _res.GetAccounts();
-        }
+        //public List<Account> GetAccounts()
+        //{
+        //    return _res.GetAccounts();
+        //}
 
     }
 }

@@ -15,11 +15,11 @@ namespace QLD_THD.Controllers
         {
             _bus = bus;
         }
-        [Route("get-all")]
-        [HttpPost]
-        public List<GiaoVien> GetGiaoViens()
-        {
-            return _bus.GetGiaoViens();
-        }
+        //[Route("get-all")]
+        //[HttpPost]
+        //public List<GiaoVien> GetGiaoViens()
+        //{
+        //    return _bus.GetGiaoViens();
+        //}
     }
 }

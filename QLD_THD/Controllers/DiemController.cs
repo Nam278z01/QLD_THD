@@ -15,11 +15,11 @@ namespace QLD_THD.Controllers
         {
             _bus = bus;
         }
-        [Route("get-all")]
-        [HttpPost]
-        public List<Diem> GetDiems()
-        {
-            return _bus.GetDiems();
-        }
+        //[Route("get-all")]
+        //[HttpPost]
+        //public List<Diem> GetDiems()
+        //{
+        //    return _bus.GetDiems();
+        //}
     }
 }

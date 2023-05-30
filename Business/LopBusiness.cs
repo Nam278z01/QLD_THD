@@ -16,10 +16,10 @@ namespace BusinesslogicLayer
             _res = res;
         }
 
-        public List<Lop> GetLopHocs()
-        {
-            return _res.GetLopHocs();
-        }
+        //public List<Lop> GetLopHocs()
+        //{
+        //    return _res.GetLopHocs();
+        //}
 
     }
 }

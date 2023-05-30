@@ -16,10 +16,10 @@ namespace BusinesslogicLayer
             _res = res;
         }
 
-        public List<Ctdiem> GetCtietDiems()
-        {
-            return _res.GetCtietDiems();
-        }
+        //public List<Ctdiem> GetCtietDiems()
+        //{
+        //    return _res.GetCtietDiems();
+        //}
 
     }
 }

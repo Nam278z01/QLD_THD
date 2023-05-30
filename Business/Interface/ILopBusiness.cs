@@ -9,6 +9,6 @@ namespace BusinesslogicLayer
 {
     public interface ILopBusiness
     {
-        List<Lop> GetLopHocs();
+        //List<Lop> GetLopHocs();
     }
 }

@@ -15,11 +15,11 @@ namespace QLD_THD.Controllers
         {
             _bus = bus;
         }
-        [Route("get-all")]
-        [HttpPost]
-        public List<Account> GetAccounts()
-        {
-            return _bus.GetAccounts();
-        }
+        //[Route("get-all")]
+        //[HttpPost]
+        //public List<Account> GetAccounts()
+        //{
+        //    return _bus.GetAccounts();
+        //}
     }
 }

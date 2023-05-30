@@ -16,10 +16,10 @@ namespace BusinesslogicLayer
             _res = res;
         }
 
-        public List<Diem> GetDiems()
-        {
-            return _res.GetDiems();
-        }
+        //public List<Diem> GetDiems()
+        //{
+        //    return _res.GetDiems();
+        //}
 
     }
 }

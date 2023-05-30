@@ -16,10 +16,10 @@ namespace BusinesslogicLayer
             _res = res;
         }
 
-        public List<Khoi> GetKhoiHocs()
-        {
-            return _res.GetKhoiHocs();
-        }
+        //public List<Khoi> GetKhoiHocs()
+        //{
+        //    return _res.GetKhoiHocs();
+        //}
 
     }
 }

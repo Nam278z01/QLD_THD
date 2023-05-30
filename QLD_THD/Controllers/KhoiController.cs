@@ -15,11 +15,11 @@ namespace QLD_THD.Controllers
         {
             _bus = bus;
         }
-        [Route("get-all")]
-        [HttpPost]
-        public List<Khoi> GetKhoiHocs()
-        {
-            return _bus.GetKhoiHocs();
-        }
+        //[Route("get-all")]
+        //[HttpPost]
+        //public List<Khoi> GetKhoiHocs()
+        //{
+        //    return _bus.GetKhoiHocs();
+        //}
     }
 }
