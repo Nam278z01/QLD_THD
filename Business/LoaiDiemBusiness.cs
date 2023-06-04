@@ -8,31 +8,31 @@ using System.Threading.Tasks;
 
 namespace BusinesslogicLayer
 {
-    public class KhoiBusiness : IKhoiBusiness
+    public class LoaiDiemBusiness : ILoaiDiemBusiness
     {
-        IKhoiRepository _res;
-        public KhoiBusiness(IKhoiRepository res) 
+        ILoaiDiemRepository _res;
+        public LoaiDiemBusiness(ILoaiDiemRepository res) 
         {
             _res = res;
         }
 
-        //public List<Khoi> GetKhoiHocs()
+        //public List<LoaiDiem> GetLoaiDiems()
         //{
-        //    return _res.GetKhoiHocs();
+        //    return _res.GetLoaiDiems();
         //}
-        public List<Khoi> Search(int page, int pageSize, string makhoi, string tenkhoi, out long total)
+        public List<LoaiDiem> Search(int page, int pageSize, string maloaidiem, string tenloaidiem, out long total)
         {
-            return _res.Search(page, pageSize, makhoi, tenkhoi, out total);
+            return _res.Search(page, pageSize, maloaidiem, tenloaidiem, out total);
         }
-        public Khoi GetById(string id)
+        public LoaiDiem GetById(string id)
         {
             return _res.GetById(id);
         }
-        public bool Create(Khoi model)
+        public bool Create(LoaiDiem model)
         {
             return _res.Create(model);
         }
-        public bool Update(Khoi model)
+        public bool Update(LoaiDiem model)
         {
             return _res.Update(model);
         }

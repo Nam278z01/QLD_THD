@@ -226,6 +226,7 @@ namespace QLD_THD.Controllers
                 {
                     dataExport.Rows.Add();
                 }
+
                 var webRoot = _env.ContentRootPath;
                 var tempPath = Path.Combine(webRoot + @"\ExcelTemplates\", "mon_hoc_temp.xlsx");
                 var exportPath = Path.Combine(webRoot + @"\Export\Excel\", "mon_hoc_temp" + Guid.NewGuid().ToString() + ".xlsx");

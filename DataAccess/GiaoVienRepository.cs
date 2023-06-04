@@ -20,59 +20,62 @@ namespace DataAccessLayer
         //{
         //    return _context.GiaoViens.ToList();
         //}
-        public List<GiaoVien> Search(int page, int pageSize, string mamh, string tenmh, out long total)
+        public List<GiaoVien> Search(int page, int pageSize, string magv, string tengv, out long total)
         {
             total = 0;
             if (pageSize == 0)
             {
                 return _context.GiaoViens
                     .AsNoTracking()
-                    .Where(m => m.MaGiaoVien.Contains(mamh) && m.HoTen.Contains(tenmh))
+                    .Where(m => m.MaGiaoVien.Contains(magv) && m.HoTen.Contains(tengv))
                     .ToList();
             }
             else
             {
                 total = _context.GiaoViens
                     .AsNoTracking()
-                    .Where(m => m.MaGiaoVien.Contains(mamh) && m.HoTen.Contains(tenmh))
+                    .Where(m => m.MaGiaoVien.Contains(magv) && m.HoTen.Contains(tengv))
                     .Count();
                 return _context.GiaoViens
                     .AsNoTracking()
-                    .Where(m => m.MaGiaoVien.Contains(mamh) && m.HoTen.Contains(tenmh))
+                    .Where(m => m.MaGiaoVien.Contains(magv) && m.HoTen.Contains(tengv))
                     .Skip((page - 1) * pageSize)
                     .Take(pageSize)
                     .ToList();
             }
         }
-        public MonHoc GetById(string id)
+        public GiaoVien GetById(string id)
         {
-            return _context.MonHocs
+            return _context.GiaoViens
                    .AsNoTracking()
-                   .FirstOrDefault(m => m.MaMonHoc == id);
+                   .FirstOrDefault(m => m.MaGiaoVien == id);
         }
-        public bool Create(MonHoc model)
+        public bool Create(GiaoVien model)
         {
-            model.Ctdiems = null;
-            _context.MonHocs.Add(model);
+           
+            _context.GiaoViens.Add(model);
             _context.SaveChanges();
             return true;
         }
-        public bool Update(MonHoc model)
+        public bool Update(GiaoVien model)
         {
-            MonHoc newModel = _context.MonHocs
+            GiaoVien newModel = _context.GiaoViens
                    .AsNoTracking()
-                   .FirstOrDefault(m => m.MaMonHoc == model.MaMonHoc);
-            newModel.TenMonHoc = model.TenMonHoc;
-            newModel.SoTiet = model.SoTiet;
-            model.Ctdiems = null;
-            _context.MonHocs.Update(newModel);
+                   .FirstOrDefault(m => m.MaGiaoVien == model.MaGiaoVien);
+            newModel.HoTen = model.HoTen;
+            newModel.NgaySinh = model.NgaySinh;
+            newModel.QueQuan = model.QueQuan;
+            newModel.SoDienThoai = model.SoDienThoai;
+            newModel.GioiTinh = model.GioiTinh;
+            newModel.SoCmnd = model.SoCmnd;
+            _context.GiaoViens.Update(newModel);
             _context.SaveChanges();
             return true;
         }
         public bool Delete(List<string> ids)
         {
-            List<MonHoc> deleteList = _context.MonHocs.Where(m => ids.Contains(m.MaMonHoc)).ToList();
-            _context.MonHocs.RemoveRange(deleteList);
+            List<GiaoVien> deleteList = _context.GiaoViens.Where(m => ids.Contains(m.MaGiaoVien)).ToList();
+            _context.GiaoViens.RemoveRange(deleteList);
             _context.SaveChanges();
             return true;
         }

@@ -10,5 +10,10 @@ namespace BusinesslogicLayer
     public interface ILoaiDiemBusiness
     {
         //List<LoaiDiem> GetLoaiDiems();
+        List<LoaiDiem> Search(int page, int pageSize, string maloaidiem, string tenloaidiem, out long total);
+        LoaiDiem GetById(string id);
+        bool Create(LoaiDiem model);
+        bool Update(LoaiDiem model);
+        bool Delete(List<string> ids);
     }
 }

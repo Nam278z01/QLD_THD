@@ -10,7 +10,7 @@ namespace DataAccessLayer
     public interface ILopRepository
     {
         //List<Lop> GetLopHocs();
-        List<Lop> Search(int page, int pageSize, string mamh, string tenmh, out long total);
+        List<Lop> Search(int page, int pageSize, string malop, string tenlop, out long total);
         Lop GetById(string id);
         bool Create(Lop model);
         bool Update(Lop model);

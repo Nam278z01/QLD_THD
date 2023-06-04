@@ -63,8 +63,7 @@ namespace DataAccessLayer
                    .AsNoTracking()
                    .FirstOrDefault(m => m.MaLop == model.MaLop);
             newModel.TenLop = model.TenLop;
-            //newModel.SoTiet = model.SoTiet;
-            //model.Ctdiems = null;
+            newModel.SiSo = model.SiSo;
             _context.Lops.Update(newModel);
             _context.SaveChanges();
             return true;

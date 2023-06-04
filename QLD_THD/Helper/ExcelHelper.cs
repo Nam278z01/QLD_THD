@@ -675,6 +675,8 @@ namespace QLD_THD.Helper
         public static string ExportDataTableToExcel(string pathFileExport, string pathFileTemplate, DataTable data, int tableDataStartColumn, int tableDataStartRow,
             List<ExcelDataExtention> reportStaticValue, bool fistColumnIsOrdNumber, string formatDateTime, string formatNumber, bool endRowIsSumValue, string sumValueText, int headerRowSpan = 1, bool contentDashBottomBorder = false, double dataRowHeight = 14.0, DataTable data2 = null, int isBoldGroup = 0, int fontSizeGroup = 0, int heightGroup = 0, List<ColumnColor> columnColors = null, bool default_number = false, bool coppy_file = true, string sheet_name = null)
         {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
             Console.WriteLine("pathFileExport:" + pathFileExport);
             Console.WriteLine("pathFileTemplate:" + pathFileTemplate);
 

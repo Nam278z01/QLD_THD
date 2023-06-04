@@ -20,6 +20,25 @@ namespace BusinesslogicLayer
         //{
         //    return _res.GetGiaoViens();
         //}
-
+        public List<GiaoVien> Search(int page, int pageSize, string magv, string tengv, out long total)
+        {
+            return _res.Search(page, pageSize, magv, tengv, out total);
+        }
+        public GiaoVien GetById(string id)
+        {
+            return _res.GetById(id);
+        }
+        public bool Create(GiaoVien model)
+        {
+            return _res.Create(model);
+        }
+        public bool Update(GiaoVien model)
+        {
+            return _res.Update(model);
+        }
+        public bool Delete(List<string> ids)
+        {
+            return _res.Delete(ids);
+        }
     }
 }
